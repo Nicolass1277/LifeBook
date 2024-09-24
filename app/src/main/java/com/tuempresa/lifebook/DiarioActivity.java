@@ -34,7 +34,7 @@ public class DiarioActivity extends AppCompatActivity {
         // Inicializar SharedPreferences
         sharedPreferences = getSharedPreferences("Diario", MODE_PRIVATE);
 
-        // Configurar el reloj en tiempo real
+        // Configurar reloj en tiempo real
         final android.os.Handler handler = new android.os.Handler();
         handler.post(new Runnable() {
             @Override
@@ -48,17 +48,13 @@ public class DiarioActivity extends AppCompatActivity {
         calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
             selectedDate = dayOfMonth + "-" + (month + 1) + "-" + year;
             // Cargar el texto almacenado para esa fecha
-            diarioTexto.setText(sharedPreferences.getString(selectedDate, ""));
+            cargarMensajeDelDia(selectedDate);
         });
 
         // Manejar la acción del botón Guardar
         guardarButton.setOnClickListener(v -> {
             if (!selectedDate.isEmpty()) {
-                // Guardar el texto para la fecha seleccionada
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString(selectedDate, diarioTexto.getText().toString());
-                editor.apply();
-                Toast.makeText(DiarioActivity.this, "Mensaje guardado para el " + selectedDate, Toast.LENGTH_SHORT).show();
+                guardarMensajeDelDia(selectedDate, diarioTexto.getText().toString());
             } else {
                 Toast.makeText(DiarioActivity.this, "Por favor selecciona una fecha", Toast.LENGTH_SHORT).show();
             }
@@ -69,5 +65,19 @@ public class DiarioActivity extends AppCompatActivity {
     private String getCurrentTime() {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss", Locale.getDefault());
         return sdf.format(new Date());
+    }
+
+    // Cargar mensaje almacenado para la fecha seleccionada
+    private void cargarMensajeDelDia(String fecha) {
+        String mensajeGuardado = sharedPreferences.getString(fecha, "");
+        diarioTexto.setText(mensajeGuardado);
+    }
+
+    // Guardar mensaje para la fecha seleccionada
+    private void guardarMensajeDelDia(String fecha, String mensaje) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(fecha, mensaje);
+        editor.apply();
+        Toast.makeText(DiarioActivity.this, "Mensaje guardado para el " + fecha, Toast.LENGTH_SHORT).show();
     }
 }
