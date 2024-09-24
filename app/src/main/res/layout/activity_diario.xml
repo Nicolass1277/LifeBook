@@ -20,6 +20,11 @@
         android:id="@+id/diarioTexto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe aquí " />
+        android:hint="Escribe aquí tu entrada del día" />
 
+    <Button
+        android:id="@+id/guardarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
 </LinearLayout>
