@@ -4,27 +4,75 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Reloj en tiempo real -->
+
+    <!-- CalendarView para seleccionar la fecha -->
+
     <TextView
         android:id="@+id/relojTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp"
         android:text="00:00:00"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <!-- EditText para escribir el mensaje del día -->
     <EditText
         android:id="@+id/diarioTexto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe aquí tu entrada del día" />
+        android:hint="Escribe aquí tu entrada del día"
+        android:padding="16dp" />
 
+    <!-- Botón para guardar el mensaje -->
     <Button
         android:id="@+id/guardarButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guardar" />
+        android:text="Guardar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView para mostrar mensajes guardados -->
+
+    <!-- Botón para volver atrás -->
+
+    <Button
+        android:id="@+id/editarButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Editar" />
+
+    <TextView
+        android:id="@+id/mensajesGuardados"
+        android:layout_width="431dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Mensajes guardados:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver Atrás"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:onClick="goBack" />
+    <Button
+        android:id="@+id/verMensajesMesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Mensajes del Mes"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
 </LinearLayout>
