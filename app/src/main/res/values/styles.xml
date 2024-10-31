@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+    <style name="RoundedEditText">
+        <item name="android:background">@drawable/rounded_edit_text</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="PrimaryButton">
+        <item name="android:backgroundTint">#6200EE</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.CalendarView" parent="Widget.MaterialComponents.MaterialCalendar">
+        <!-- Personaliza el estilo del calendario aquí -->
+    </style>
+
+</resources>
