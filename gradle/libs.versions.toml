@@ -8,11 +8,14 @@ material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
 materialVersion = "1.13.0-alpha07"
+<<<<<<< HEAD
 firebaseAuth = "21.0.3"
 playServicesAuth = "20.2.0"
 biometric = "1.2.0"
 comGoogleGmsGoogleServicesGradlePlugin = "4.4.2"
 playServicesAuthVersion = "19.2.0"
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -23,11 +26,14 @@ material = { group = "com.google.android.material", name = "material", version.r
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 google-material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
+<<<<<<< HEAD
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }
 biometric = { group = "androidx.biometric", name = "biometric", version = "1.2.0-alpha01" }
 com-google-gms-google-services-gradle-plugin = { group = "com.google.gms.google-services", name = "com.google.gms.google-services.gradle.plugin", version.ref = "comGoogleGmsGoogleServicesGradlePlugin" }
 gms-play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuthVersion" }
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

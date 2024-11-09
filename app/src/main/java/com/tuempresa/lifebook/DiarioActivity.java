@@ -9,14 +9,21 @@ import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.util.Date;
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
 public class DiarioActivity extends AppCompatActivity {
 
     private CalendarView calendarView;
     private EditText diarioTexto;
+<<<<<<< HEAD
     private Button guardarButton, backButton, editarButton, verMesButton;
+=======
+    private Button guardarButton, backButton, editarButton;
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
     private String selectedDate = "";
     private SharedPreferences sharedPreferences;
 
@@ -30,19 +37,28 @@ public class DiarioActivity extends AppCompatActivity {
         guardarButton = findViewById(R.id.guardarButton);
         backButton = findViewById(R.id.backButton);
         editarButton = findViewById(R.id.editarButton);
+<<<<<<< HEAD
         verMesButton = findViewById(R.id.verMesButton);  // Botón para ver entradas del mes
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
         diarioTexto.setEnabled(false);
         sharedPreferences = getSharedPreferences("Diario", MODE_PRIVATE);
 
+<<<<<<< HEAD
         // Acción de seleccionar una fecha
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
         calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
             selectedDate = dayOfMonth + "-" + (month + 1) + "-" + year;
             cargarMensajeDelDia(selectedDate);
             diarioTexto.setEnabled(false);
         });
 
+<<<<<<< HEAD
         // Acción de editar la entrada
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
         editarButton.setOnClickListener(v -> {
             if (!selectedDate.isEmpty()) {
                 diarioTexto.setEnabled(true);
@@ -52,7 +68,10 @@ public class DiarioActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
         // Acción de guardar la entrada
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
         guardarButton.setOnClickListener(v -> {
             if (!selectedDate.isEmpty()) {
                 guardarMensajeDelDia(selectedDate, diarioTexto.getText().toString());
@@ -62,12 +81,16 @@ public class DiarioActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
         // Acción de volver atrás
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
         backButton.setOnClickListener(v -> {
             Intent intent = new Intent(DiarioActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
         });
+<<<<<<< HEAD
 
         // Acción de ver todas las entradas del mes
         verMesButton.setOnClickListener(v -> {
@@ -78,6 +101,8 @@ public class DiarioActivity extends AppCompatActivity {
                 Toast.makeText(DiarioActivity.this, "Por favor selecciona una fecha", Toast.LENGTH_SHORT).show();
             }
         });
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
     }
 
     private void cargarMensajeDelDia(String fecha) {
@@ -91,6 +116,7 @@ public class DiarioActivity extends AppCompatActivity {
         editor.apply();
         Toast.makeText(DiarioActivity.this, "Mensaje guardado para el " + fecha, Toast.LENGTH_SHORT).show();
     }
+<<<<<<< HEAD
 
     private void verEntradasDelMes(String mes) {
         StringBuilder allEntries = new StringBuilder();
@@ -113,4 +139,6 @@ public class DiarioActivity extends AppCompatActivity {
             Toast.makeText(DiarioActivity.this, "No hay entradas para este mes", Toast.LENGTH_SHORT).show();
         }
     }
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 }

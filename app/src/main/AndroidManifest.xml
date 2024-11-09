@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     package="com.tuempresa.lifebook">
+=======
+    xmlns:tools="http://schemas.android.com/tools">
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
     <application
         android:allowBackup="true"
@@ -12,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeBook"
+<<<<<<< HEAD
         tools:targetApi="35"
         >
 
@@ -22,11 +27,18 @@
             android:name=".DiarioActivity"
             android:exported="false" />
 
+=======
+        tools:targetApi="31">
+        <activity
+            android:name=".DiarioActivity"
+            android:exported="false" />
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+<<<<<<< HEAD
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -34,3 +46,12 @@
     </application>
 
 </manifest>
+=======
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19

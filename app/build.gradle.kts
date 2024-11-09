@@ -4,7 +4,11 @@ plugins {
 
 android {
     namespace = "com.tuempresa.lifebook"
+<<<<<<< HEAD
     compileSdk = 35
+=======
+    compileSdk = 34
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
     defaultConfig {
         applicationId = "com.tuempresa.lifebook"
@@ -37,11 +41,14 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.google.material)
+<<<<<<< HEAD
     implementation(libs.firebase.auth)
     implementation(libs.play.services.auth)
     implementation(libs.biometric)
     implementation(libs.com.google.gms.google.services.gradle.plugin)
     implementation(libs.gms.play.services.auth)
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

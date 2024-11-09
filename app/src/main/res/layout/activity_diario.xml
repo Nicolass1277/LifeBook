@@ -1,14 +1,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:orientation="vertical"
     android:padding="24dp"
     android:gravity="center_horizontal"
     android:background="@drawable/fondo_diario">>
+=======
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
     <CalendarView
         android:id="@+id/calendarView"
         style="@style/Widget.MaterialComponents.CalendarView"
+<<<<<<< HEAD
         android:layout_width="308dp"
         android:layout_height="301dp"
         android:layout_marginBottom="24dp"
@@ -37,11 +44,29 @@
             android:textColor="#333"
             android:textSize="16sp" />
     </ScrollView>
+=======
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/diarioTexto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edit_text"
+        android:gravity="top|start"
+        android:hint="Escribe aquí tu entrada del día"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:scrollbars="vertical" />
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
     <Button
         android:id="@+id/guardarButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="16dp"
         android:backgroundTint="#4CAF50"
         android:text="Guardar"
@@ -49,11 +74,18 @@
         android:textSize="16sp"
         android:padding="12dp"
         android:elevation="4dp" />
+=======
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#6200EE"
+        android:text="Guardar"
+        android:textColor="#FFFFFF" />
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
     <Button
         android:id="@+id/editarButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="16dp"
         android:backgroundTint="#FF9800"
         android:text="Editar"
@@ -61,11 +93,17 @@
         android:textSize="16sp"
         android:padding="12dp"
         android:elevation="4dp" />
+=======
+        android:backgroundTint="#6200EE"
+        android:text="Editar"
+        android:textColor="#FFFFFF" />
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="16dp"
         android:backgroundTint="#2196F3"
         android:text="Volver Atrás"
@@ -83,5 +121,10 @@
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         android:padding="10dp"/>
+=======
+        android:backgroundTint="#6200EE"
+        android:text="Volver Atrás"
+        android:textColor="#FFFFFF" />
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 
 </LinearLayout>

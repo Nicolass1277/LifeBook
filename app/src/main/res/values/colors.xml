@@ -5,6 +5,9 @@
     <color name="purple_500">#6200EE</color>
     <color name="purple_700">#3700B3</color>
     <color name="teal_200">#03DAC5</color>
+<<<<<<< HEAD
     <color name="amarillo">#FFD700</color>
     <color name="green">#4CAF50</color>
+=======
+>>>>>>> 6bef70bbd2595c9481e093d189ea3c22e198ad19
 </resources>
