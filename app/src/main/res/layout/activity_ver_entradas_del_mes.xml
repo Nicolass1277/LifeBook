@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- TextView para mostrar las entradas del mes -->
+    <TextView
+        android:id="@+id/entradasTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entradas del mes"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+    <!-- Botón para eliminar todas las entradas del mes -->
+    <Button
+        android:id="@+id/eliminarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar todas las entradas"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+    <!-- Botón para guardar las entradas del mes en un archivo Word -->
+    <Button
+        android:id="@+id/guardarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar en archivo Word"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:elevation="4dp" />
+
+</LinearLayout>
